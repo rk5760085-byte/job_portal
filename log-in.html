@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Glass Card */
+.login-box {
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Heading */
+.login-box h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Input Fields */
+.input-box {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-box label {
+    color: white;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #e2e8f0;
+}
+
+/* Extra Links */
+.extra {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.extra a {
+    color: white;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>Welcome Back 👋</h2>
+
+    <form>
+        <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Enter password">
+        </div>
+
+        <button class="login-btn">Login</button>
+
+        <div class="extra">
+            <p><a href="#">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="#">Signup</a></p>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

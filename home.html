@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Job Portal</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text span {
+    color: #38bdf8;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #38bdf8;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Image */
+.hero-img img {
+    width: 400px;
+}
+
+/* Features */
+.features {
+    padding: 60px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="logo">JobPortal</div>
+    <nav>
+        
+        <a href="#">Jobs</a>
+        <a href="#">Companies</a>
+
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Find Your <span>Dream Job</span> Today</h1>
+        <p>Explore thousands of job opportunities with top companies</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search jobs...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    </div>
+
+</section>
+
+<!-- Features -->
+<section class="features">
+    <h2>Why Choose Us?</h2>
+
+    <div class="feature-box">
+
+        <div class="card">
+            <h3>🚀 Fast Hiring</h3>
+            <p>Apply and get hired quickly</p>
+        </div>
+
+        <div class="card">
+            <h3>🏢 Top Companies</h3>
+            <p>Work with trusted brands</p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Secure</h3>
+            <p>Your data is safe with us</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 JobPortal | Designed by You 💙</p>
+</footer>
+
+</body>
+</html>

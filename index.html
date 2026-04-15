@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Job Portal</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d6efd;
+    color: white;
+    padding: 15px 30px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to right, #0d6efd, #4facfe);
+    color: white;
+}
+
+.hero input {
+    padding: 10px;
+    width: 250px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Jobs */
+.jobs {
+    padding: 40px;
+}
+
+.job-card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.job-card button {
+    background: #0d6efd;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+/* Forms */
+.form-section {
+    padding: 40px;
+    background: #fff;
+}
+
+form input {
+    width: 250px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <h2>JobPortal</h2>
+    <nav><b>
+        <a href="/html/home.html">Home</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="/html/jobs.html">Jobs</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="/html/log-in.html">Login</a>&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="/html/sign_up.html">Signup</a>
+        </b>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Find Your Dream Job</h1>
+    <p>Search jobs easily</p>
+    <input type="text" placeholder="Search jobs...">
+    <button>Search</button>
+</section>
+
+<!-- Jobs -->
+<section class="jobs" id="jobs">
+    <h2>Available Jobs</h2>
+
+    <div class="job-card">
+        <h3>Web Developer</h3>
+        <p>Company: ABC Ltd</p>
+        <p>Location: Delhi</p>
+        <button>Apply Now</button>
+    </div>
+
+    <div class="job-card">
+        <h3>Frontend Developer</h3>
+        <p>Company: XYZ Pvt</p>
+        <p>Location: Noida</p>
+        <button>Apply Now</button>
+    </div>
+
+    <div class="job-card">
+        <h3>Backend Developer</h3>
+        <p>Company: Tech Corp</p>
+        <p>Location: Bangalore</p>
+        <button>Apply Now</button>
+    </div>
+</section>
+
+<!-- Login -->
+<section class="form-section" id="login">
+    <h2>Login</h2>
+    <form>
+        <input type="email" placeholder="Email"><br>
+        <input type="password" placeholder="Password"><br>
+        <button>Login</button>
+    </form>
+</section>
+
+<!-- Signup -->
+<section class="form-section" id="signup">
+    <h2>Signup</h2>
+    <form>
+        <input type="text" placeholder="Name"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="password" placeholder="Password"><br>
+        <button>Register</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 JobPortal</p>
+</footer>
+
+</body>
+</html>

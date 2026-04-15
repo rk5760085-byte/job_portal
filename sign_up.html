@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signup</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card */
+.signup-box {
+    width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Heading */
+.signup-box h2 {
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-box {
+    margin: 12px 0;
+    text-align: left;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.divider hr {
+    flex: 1;
+}
+
+.divider span {
+    margin: 0 10px;
+    color: gray;
+}
+
+/* Social Buttons */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Login link */
+.login-link {
+    margin-top: 15px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #4f46e5;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="signup-box">
+    <h2>Create Account 🚀</h2>
+    <p>Join us and find your dream job</p>
+
+    <form>
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+        </div>
+
+        <div class="input-box">
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button class="signup-btn">Signup</button>
+    </form>
+
+    <!-- Divider -->
+    <div class="divider">
+        <hr><span>OR</span><hr>
+    </div>
+
+    <!-- Google Login -->
+    <button class="social-btn" onclick="googleLogin()">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png">
+        Continue with Google
+    </button>
+
+    <!-- Optional extra -->
+    <button class="social-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png">
+        Continue with Facebook
+    </button>
+
+    <!-- Login link -->
+    <div class="login-link">
+        Already have an account? <a href="#">Login</a>
+    </div>
+</div>
+
+<script>
+function googleLogin(){
+    alert("Google Login Integration Coming Soon!");
+}
+</script>
+
+</body>
+</html>
